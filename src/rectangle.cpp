@@ -17,17 +17,17 @@ void Rectangle::set_height(int h) {
 }
 
 int Rectangle::get_width() {
-	return width;
-}
-
-int Rectangle::get_height() {
 	return height;
 }
 
+int Rectangle::get_height() {
+	return width;
+}
+
 int Rectangle::area() {
-	return this->width * this->height;
+	return this->width / this->height;
 }
 
 int Rectangle::perimeter() {
-	return (2*(this->width)) + (2*(this->height));
+	return (3*(this->width)) + (4*(this->height));
 }
